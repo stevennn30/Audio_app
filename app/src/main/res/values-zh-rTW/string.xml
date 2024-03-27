@@ -1,0 +1,67 @@
+<resources>
+
+    <string name="Logout">登出</string>
+    <string name="Login">登入</string>
+    <string name="Register">註冊</string>
+
+    <string name="Guest_Mode">訪客模式</string>
+    <string name="Rescan">重新搜尋</string>
+    <string name="Notifications">通知</string>
+    <string name="Contact_us">聯絡我們</string>
+    <string name="a1_Manual">A1說明書</string>
+    <string name="information">資訊</string>
+    <string name="app_version">APP版本:</string>
+    <string name="Device_ID">裝置序號:</string>
+    <string name="confirm">註冊</string>
+    <string name="ok">確定</string>
+    <string name="cancel">關閉</string>
+    <string name="skip">略過</string>
+    <string name="NonNull">方案名稱不可空白</string>
+
+    <string name="scanning_device">掃描裝置中</string>
+    <string name="can_not_find_your_device">找不到您的裝置</string>
+    <string name="opengps">請開啟定位服務以使用藍芽掃描功能</string>
+    <string name="email_hint">電子郵件</string>
+    <string name="password_hint">密碼</string>
+    <string name="reconfirm_password_hint">請再次輸入密碼</string>
+
+    <string name="ContactUsUrl">https://m.me/serafim.tech</string>
+    <string name="NotificationsUrl">https://serafim-tech.com/zh/%e6%9c%80%e6%96%b0%e6%b6%88%e6%81%af</string>
+    <string name="no_email_input">請輸入信箱</string>
+    <string name="no_password_input">請輸入密碼</string>
+    <string name="password_reconfirm">請再次確認密碼</string>
+    <string name="password_length">密碼長度需大於6位</string>
+    <string name="reconfirm_failed">再次確認密碼失敗，請確認密碼</string>
+    <string name="please_verify_email">請先驗證你的信箱</string>
+    <string name="email_login_successful">信箱登入成功</string>
+    <string name="no_user">無此用戶，或用戶已遭刪除</string>
+    <string name="password_mistake">密碼無效或用戶沒有密碼。</string>
+    <string name="email_address_badly">電子郵件格式錯誤。</string>
+    <string name="email_login_fail">登入失敗，發生其他不明錯誤，請稍後再試。</string>
+    <string name="add_project">新增方案</string>
+    <!--Vol-->
+    <string name="volume">音量</string>
+    <string name="equalizer">等化器</string>
+    <string name="project_name">方案名稱</string>
+    <string name="rescan_hint">請確認已開啟裝置電源，且裝置位於行動裝置訊號內</string>
+    <string name="delete">刪除</string>
+    <string name="setting">設置</string>
+    <string name="save_current_project">儲存當前方案</string>
+    <string name="disconnect">連線中斷</string>
+    <string name="Rap">饒舌</string>
+    <string name="Popular">流行</string>
+    <string name="Rock">搖滾</string>
+    <string name="Default">預設</string>
+    <string name="Serafim">Serafim</string>
+    <string name="Jazz">爵士</string>
+    <string name="Blues">藍調</string>
+    <string name="Classical">古典</string>
+    <string name="Reggae">雷鬼</string>
+    <string name="HipHop">嘻哈</string>
+    <string name="Game">遊戲</string>
+    <string name="Warranty">https://serafim-tech.com/zh/registration-a1-cht</string>
+    <string name="DeviceIDinput">wpforms-5744-field_1</string>
+    <string name="please_rescan">請重新連線</string>
+    <string name="questionnaire_skip">跳過延長保固</string>
+    <string name="Delete">確定要刪除嗎?</string>
+</resources>

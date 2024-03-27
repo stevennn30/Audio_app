@@ -1,0 +1,131 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    namespace 'com.serafimtech.serafimaudio'
+
+    //APK 簽名
+    signingConfigs {
+        debug {
+            storeFile file('C:\\steven\\SerafimAudio_android_20240308\\SerafimAudio_android\\app\\src\\main\\key\\KeyForSerafimAudio.jks')
+            //storeFile file('C:\\Bill_WorkSpace\\1.Serafim\\Projects\\Android_WorkSpace\\Audio_android-1.1.1\\app\\src\\main\\key\\KeyForSerafimPlay.jks')
+            storePassword '123456'
+            keyAlias 'key0'
+            keyPassword '123456'
+        }
+    }
+
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.serafimtech.serafimaudio"
+        minSdk 21
+        targetSdk 33
+        versionCode 14
+        versionName "1.1.1"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile(
+                    'proguard-android-optimize.txt'),
+                    'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        //sourceCompatibility JavaVersion.VERSION_1_8
+        //targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        //jvmTarget = '1.8'
+        jvmTarget = '17'
+    }
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.3" //https://blog.csdn.net/ChinaDragon10/article/details/136200068
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+    allprojects{
+        tasks.withType(JavaCompile).tap {
+            configureEach {
+                options.compilerArgs << "-Xlint:deprecation"
+            }
+        }
+    }
+}
+
+dependencies {
+    //<editor-fold desc="<Compose空專案原生>">
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation "androidx.compose.ui:ui:$compose_version"
+    implementation "androidx.compose.material:material:1.3.1"  //$compose_version
+    implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
+    implementation 'androidx.activity:activity-compose:1.5.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
+    debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
+    debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
+    //</editor-fold>
+    implementation 'androidx.fragment:fragment-ktx:1.3.2'
+    //livedata
+    implementation "androidx.compose.runtime:runtime-livedata:$compose_version"
+    //compose-navigation
+    implementation "androidx.navigation:navigation-compose:2.5.2"
+    //compose-navigation-animation
+    implementation "com.google.accompanist:accompanist-navigation-animation:0.21.1-beta"
+    //material質感設計
+    implementation "androidx.compose.material:material-icons-extended:1.3.1"  //$compose_version
+    //HTTP
+    implementation 'com.android.volley:volley:1.2.1'
+    //coil(image)
+    implementation "io.coil-kt:coil-compose:2.1.0"
+    //ftp
+    implementation files('libs/commons-net-3.8.0.jar')
+    //Exo Player Library is deprecated
+    //implementation("com.google.android.exoplayer:exoplayer:2.18.1")
+    //1.1.1以上需要SDK-34 替代"com.google.android.exoplayer:exoplayer:2.18.1"
+    implementation 'androidx.media3:media3-exoplayer:1.1.1'
+    implementation 'androidx.media3:media3-exoplayer-dash:1.1.1'
+    implementation 'androidx.media3:media3-ui:1.1.1'
+    //頂部狀態列與底部導航欄顏色控制
+    implementation "com.google.accompanist:accompanist-systemuicontroller:0.20.2"
+    //firebase-bom(firebase版本管理)
+    implementation platform('com.google.firebase:firebase-bom:30.3.1')
+    //firebase-database
+    implementation 'com.google.firebase:firebase-database'
+    //firebase-crashlytics(firebase崩潰報告分析)
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    //firebase-auth(firebase登入)
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-auth'
+    //firebase-analytics(firebase分析)
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    //firebase-messaging
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+    //google-auth(google登入)
+    implementation 'com.google.android.gms:play-services-auth:20.7.0' //20.3.0
+    //implementation 'com.google.gms:google-services:4.3.14'  //4.3.14
+}

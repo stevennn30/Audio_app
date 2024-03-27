@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name" translatable="false">Serafim Audio</string>
+
+    <string name="Logout">Logout</string>
+    <string name="Login">Login</string>
+    <string name="Register">Register</string>
+    <string name="Guest_Mode">Guest Mode</string>
+    <string name="Rescan">Rescan</string>
+    <string name="Notifications">Notifications</string>
+    <string name="Contact_us">Contact us</string>
+    <string name="a1_Manual">A1 Manual</string>
+    <string name="information">information</string>
+    <string name="app_version">App version:</string>
+    <string name="Device_ID">Device ID:</string>
+
+    <string name="confirm">Confirm</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="skip">Skip</string>
+    <string name="NonNull">Non Null!!</string>
+
+    <string name="scanning_device">Scanning device</string>
+    <string name="can_not_find_your_device">Can not find your device.</string>
+    <string name="opengps">Please enable location services to use Bluetooth scanning.</string>
+    <string name="email_hint">please enter email</string>
+    <string name="password_hint">password</string>
+    <string name="reconfirm_password_hint">enter the password again.</string>
+
+    <string name="ContactUsUrl">https://m.me/serafim.tech.en</string>
+    <string name="NotificationsUrl">https://m.me/serafim.tech.en</string>
+    <string name="no_email_input">Please enter an Email.</string>
+    <string name="no_password_input">Please enter a password.</string>
+    <string name="password_reconfirm">Please enter the password again.</string>
+    <string name="password_length">Password must contain at least six characters.</string>
+    <string name="reconfirm_failed">The password you entered doesn\\\'t match.</string>
+    <string name="please_verify_email">Please verify your email first.</string>
+    <string name="email_login_successful">Successfully login with email.</string>
+    <string name="no_user">There is no user record corresponding to this identifier. The user may have been deleted.</string>
+    <string name="password_mistake">The password is invalid or the user does not have a password.</string>
+    <string name="email_address_badly">The email address is badly formatted.</string>
+    <string name="email_login_fail">An unknown error occurred. Please try again later.</string>
+    <string name="add_project">Add Project</string>
+
+    <!--Vol-->
+    <string name="volume">Volume</string>
+    <string name="equalizer">Equalizer</string>
+    <string name="project_name">Project name</string>
+    <string name="bass" translatable="false">Bass</string>
+    <string name="surround3d" translatable="false">3D</string>
+    <string name="delete">Delete</string>
+    <string name="setting">Setting</string>
+    <string name="save_current_project">Save Project</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="please_rescan">Please rescan</string>
+    <string name="Rap">Rap</string>
+    <string name="Popular">Popular</string>
+    <string name="Rock">Rock</string>
+    <string name="Default">Default</string>
+    <string name="Serafim">Serafim</string>
+    <string name="Jazz">Jazz</string>
+    <string name="Blues">Blues</string>
+    <string name="Classical">Classical</string>
+    <string name="Reggae">Reggae</string>
+    <string name="HipHop">HipHop</string>
+    <string name="Game">Game</string>
+    <string name="Warranty">https://serafim-tech.com/registration-a1</string>
+    <string name="DeviceIDinput">wpforms-5733-field_1</string>
+    <string name="rescan_hint">Please make sure that the power of the device is turned on and the device is in the signal of the mobile device.</string>
+    <string name="questionnaire_skip">skip extended warranty</string>
+    <string name="Delete">Are you sure you want to delete?</string>
+
+</resources>
