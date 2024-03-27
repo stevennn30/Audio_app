@@ -385,6 +385,8 @@ class MainActivity : ComponentActivity() {
         }
     }
 
+    //git test
+    
     override fun onPause() {
         super.onPause()
 //        model.setConnectLiveData(false)
